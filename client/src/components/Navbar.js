@@ -16,10 +16,10 @@ const Navbar = () => {
         <a className="nav-link" ><Link to = "/profile">Profile </Link></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#"><Link to = "/Login">Login</Link></a>
+        <a className="nav-link"><Link to = "/Login">Login</Link></a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#"><Link to = "/Signup">Signup</Link></a>
+        <a className="nav-link"><Link to = "/Signup">Signup</Link></a>
       </li>
     </ul>
     <form className="form-inline my-2 my-lg-0">
