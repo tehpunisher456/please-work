@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Jane CreatePost CSS Start*/
+
+/* default font */
+h1, h2, h3, p, div, input, button {
+  font-family: poppins;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+}
+
+h1 {
+  font-family: poppins;
+  font-size: 2em;
+  font-weight: 700;
+ 
+}
+
+h2 {
+  font-family: poppins;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+button, .btn {
+
+font-weight: 700;
+padding-left: 20px;
+padding-right: 20px;
+height: 50px;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+  color: red !important;
+}
+/* label underline focus color */
+ .input-field input:focus {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important
+}
+textarea:focus {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important
+}
+
+.navbar-collapse, .collapse-show, .navbar-nav{
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+/* Jane CreatePost CSS End*/
