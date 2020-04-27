@@ -1,29 +1,17 @@
 const express = require("express");
 const mongoose = require("mongoose");
-// const routes = require("./routes");
+const bcrypt = require('bcryptjs');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const {MONGOURI} = require('./config/keys')
 
-require('./models/user')
 
 
-// Define middleware here
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
-
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
-
-
-// Add routes, both API and view
-// app.use(routes);
-
-// User Auth route
-app.use(require('./routes/auth'))
+// // Serve up static assets (usually on heroku)
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
 
 
 // Connect to the Mongo DB
@@ -38,6 +26,19 @@ mongoose.connection.on('connected', ()=>{
 mongoose.connection.on('error', ()=>{
   console.log("could not connect to mongo", err)
 })
+
+// Models
+require('./models/user')
+require('./models/post')
+
+
+// Routes
+
+app.use(express.json())
+app.use(require('./routes/auth'))
+app.use(require('./routes/post'))
+
+
 
 
 // Start the API server
