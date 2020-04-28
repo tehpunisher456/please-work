@@ -1,0 +1,57 @@
+/* Yurim CSS for Home page start*/
+
+
+.jumbotron {
+    background-image: url(https://images.businessoffashion.com/site/uploads/2019/09/LS-target-collabs.jpg?auto=format%2Ccompress&crop=top&fit=crop&h=575&w=1023)
+  }
+  
+  .grey-box {
+    margin-left: 160px;
+    margin-bottom: 30px;
+    width: 400px;
+    height: 300px;
+  }
+  
+  .display-4 {
+    color: white;
+    text-align: auto;
+    font-family: ‘Georgia’, Times, ‘Times New Roman’, serif;
+    font-size: 45px;
+  }
+  
+  .home-top-button{
+    background-color: black;
+    color: white;   
+  }
+  
+  .home-top-img {
+    height: 200px;
+    width: 400px;
+    margin-right: 5px;
+  }
+  
+  .card-img-top {
+    width: 180px;
+    height: 180px;
+  }
+  
+  
+  .card-title {
+    text-align: left;
+    margin-top: 5px;
+  }
+  
+  .card-deck {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  
+  
+  /* Yurim CSS for Home page end*/
+
+  .home-card{
+      max-width:500px;
+      height: max-content;
+      margin: 26px auto;
+  }
+  

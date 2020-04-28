@@ -6,9 +6,12 @@ import Profile from "./components/screens/Profile";
 import Login from "./components/screens/Login";
 import Signup from "./components/screens/Signup";
 import CreatePost from "./components/screens/CreatePost";
+import "./App.css"
 
 function App() {
   return (
+    
+
     <BrowserRouter>
     <Navbar/>
     <Route path = "/">
