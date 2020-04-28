@@ -5,7 +5,7 @@ const Navbar = () => {
   return(
   <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="/">Navbar</a>
+  <Link to="/" className="navbar-brand">Navbar </Link>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -13,16 +13,16 @@ const Navbar = () => {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-        <a className="nav-link" ><Link to = "/profile">Profile </Link></a>
+        <Link to= "/profile"> className="nav-link" > Profile </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link"><Link to = "/Login">Login</Link></a>
+        <Link to="/Login" className="nav-link">Login</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link"><Link to = "/Signup">Signup</Link></a>
+        <Link to="/Signup" className="nav-link"> Signup</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link"><Link to = "/create">Create Post</Link></a>
+        <Link to="/create" className="nav-link">Create Post</Link>
       </li>
     </ul>
     <form className="form-inline my-2 my-lg-0">
